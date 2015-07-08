@@ -1,18 +1,36 @@
+/* SMARTPHONE (UP TILL IPHONE 6+)*/
+@media only screen
+and (min-device-width : 320px) and (max-device-width : 736px) {
+
+}
+
+/* TABLET (UP TILL IPAD AIR) */
+@media only screen and (min-device-width : 737px) and (max-device-width: 1024){
+
+}
+
+/* LAPTOP AND ABOVE */
+@media only screen and (min-device-width : 1025){
+
+}
+
 body {
   background-color: #3366FF;
 }
 
-.container {
-  background-color: #474747;
-  height: 100px;
-  width: 100px;
-  margin: auto;
-  margin-top: 15%;
-  opacity: 0.3;
-  position: relative;
-}
 
-.play_button{
-  position: absolute;
-  margin:auto;
+.action_button {
+
+  margin: auto; /* center div horizontally */
+  text-align: center; /* center text horizontaly */
+
+  background-color: #FF961F;
+  color: #FFFFFF;
+  width: 30vw; /* viewport widths */
+  font-size: 7vw;
+  font-family: Trebuchet MS;
+  border-radius: 4px;
+  cursor: pointer; /* make cursor show point hand on hover */
+
+  margin-top: 65vh;
 }
