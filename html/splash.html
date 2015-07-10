@@ -3,28 +3,25 @@
   <head>
     <title> EasyJep </title>
     <link href='http://fonts.googleapis.com/css?family=Lobster' rel='stylesheet' type='text/css'>
-    <link href='http://fonts.googleapis.com/css?family=Roboto+Condensed' rel='stylesheet' type='text/css'>
-
+    <link href='http://fonts.googleapis.com/css?family=PT+Serif:400,700' rel='stylesheet' type='text/css'>
     <link href="../css/splash-style.css" rel="stylesheet" type="text/css"/>
   </head>
 
   <body>
 
+    <div class="rule-row">
+      <div class="alert-bar"> Success! Question and Answer pair has been saved. </div>
+    </div>
+
     <p class="title"> EasyJep </p>
 
     <div class="rule-row">
 
-      <input id="wordbox"class="input-box grid-left" type="text" name="word" placeholder="Word"/>
+      <input id="question"class="input-box grid-left" type="text" name="question" placeholder="Question"/>
 
-      <input id="defbox" class="input-box grid-left" type="text" name="definition" placeholder="Definition"/>
-
-      <div class="action-button grid-left enter-button"> Enter </div>
-
-
+      <input id="answer" class="input-box grid-left" type="text" name="answer" placeholder="Answer"/>
 
     </div>
-
-     <div class="action-button lets-go"> Let's Go! </div>
 
 
   </body>
@@ -32,7 +29,8 @@
 
 
 
-
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.js'> </script>
+  <script src='../js/splash.js'> </script>
 
 
 </html>

@@ -11,19 +11,18 @@
    text-align: center;
 }
 
-
-.action-button {
-   margin: auto;
-   background-color: #FF961F;
-   font-family: 'Roboto Condensed', sans-serif;
-   border-radius: 8px;
-   cursor: pointer; /* make cursor show point hand on hover */
+.alert-bar {
+   visibility: hidden;
+   background-color: #ADEFAD;
+   color: #344834;
+   font-family: 'PT Serif', serif;
+   padding: 0.5em;
+   display: inline-block;
 }
 
 .input-box{
    border: 0;
-   border-radius: 5px;
-   font-family: 'Roboto Condensed', sans-serif;
+   font-family: 'PT Serif', serif;
    color: #FF961F;
    outline: none;
    vertical-align: text-bottom;
@@ -37,8 +36,9 @@
    display: inline-block;
 }
 
+
 body {
-  background-color: #3366FF;
+  background-color: #4D94FF;
 }
 
 
@@ -46,79 +46,53 @@ body {
 @media only screen
 and (min-device-width : 320px) and (max-device-width : 736px) {
 
+   .alert-bar{
+      font-size: 2em;
+   }
+
    .title{
       font-size: 20vw;
-      margin-top: 10vh;
    }
-
-   .lets-go {
-     width: 25vw; /* viewport widths */
-     font-size: 6vw;
-     margin-top: 10vh;
-   }
-
-   .enter-button {
-      margin-top: 1em;
-      font-size: 6vw;
-      width: 14vw;
-   }
-
 
    .grid-left {
       display: block;
    }
 
-
    .input-box {
       margin: auto;
       margin-top: 1em;
-      height: 6vh;
-      width: 40vw;
-      font-size: 5vw;
+      height: 2em;
+      width: 10em;
+      font-size: 3em;
    }
 
-   #defbox {
-      font-size: 4vw;
-   }
 
 
 }
 
-/* TABLET (UP TILL IPAD AIR) */
-@media only screen and (min-device-width : 737px) and (max-device-width: 1024px){
+/* TABLET AND ABOVE */
+@media only screen and (min-device-width : 737px) {
 
-}
-
-/* LAPTOP AND ABOVE */
-@media only screen and (min-device-width : 1025px) {
+   .alert-bar{
+      font-size: 1.3vw;
+   }
 
    .input-box {
       height: 4vw;
    }
 
-   #wordbox {
-      width: 13vw;
-      font-size: 3vw;
+   #question {
+      width: 35vw;
+      font-size: 1.5vw;
    }
 
-   #defbox {
-      font-size: 2.5vw;
-      width: 35vw;
+   #answer {
+      font-size: 1.5vw;
+      width: 20vw;
    }
 
    .title{
       font-size: 8vw;
-   }
-
-   .enter-button{
-      width: 6vw;
-      font-size: 2vw;
-   }
-
-   .lets-go {
-     width: 17vw; /* viewport widths */
-     font-size: 4vw;
-     margin-top: 10vh;
    }
 
 }
