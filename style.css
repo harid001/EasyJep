@@ -1,4 +1,4 @@
-.title , .action_button {
+.title , .action-button {
    text-align: center;
    color: #FFFFFF;
 }
@@ -7,7 +7,12 @@
    font-family: 'Lobster',cursive;
 }
 
-.action_button {
+.rule-row {
+   text-align: center;
+}
+
+
+.action-button {
    margin: auto;
    background-color: #FF961F;
    font-family: 'Roboto Condensed', sans-serif;
@@ -15,6 +20,22 @@
    cursor: pointer; /* make cursor show point hand on hover */
 }
 
+.input-box{
+   border: 0;
+   border-radius: 5px;
+   font-family: 'Roboto Condensed', sans-serif;
+   color: #FF961F;
+   outline: none;
+   vertical-align: text-bottom;
+}
+
+.input-box:focus{
+   border: 2px solid #FF961F;
+}
+
+.grid-left{
+   display: inline-block;
+}
 
 body {
   background-color: #3366FF;
@@ -30,11 +51,36 @@ and (min-device-width : 320px) and (max-device-width : 736px) {
       margin-top: 10vh;
    }
 
-   .action_button {
+   .lets-go {
      width: 25vw; /* viewport widths */
      font-size: 6vw;
-     margin-top: 40vh;
+     margin-top: 10vh;
    }
+
+   .enter-button {
+      margin-top: 1em;
+      font-size: 6vw;
+      width: 14vw;
+   }
+
+
+   .grid-left {
+      display: block;
+   }
+
+
+   .input-box {
+      margin: auto;
+      margin-top: 1em;
+      height: 6vh;
+      width: 40vw;
+      font-size: 5vw;
+   }
+
+   #defbox {
+      font-size: 4vw;
+   }
+
 
 }
 
@@ -46,15 +92,33 @@ and (min-device-width : 320px) and (max-device-width : 736px) {
 /* LAPTOP AND ABOVE */
 @media only screen and (min-device-width : 1025px) {
 
+   .input-box {
+      height: 4vw;
+   }
+
+   #wordbox {
+      width: 13vw;
+      font-size: 3vw;
+   }
+
+   #defbox {
+      font-size: 2.5vw;
+      width: 35vw;
+   }
+
    .title{
       font-size: 8vw;
    }
 
+   .enter-button{
+      width: 6vw;
+      font-size: 2vw;
+   }
 
-   .action_button {
+   .lets-go {
      width: 17vw; /* viewport widths */
      font-size: 4vw;
-     margin-top: 60vh;
+     margin-top: 10vh;
    }
 
 }
