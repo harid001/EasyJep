@@ -1,36 +1,60 @@
-/* SMARTPHONE (UP TILL IPHONE 6+)*/
-@media only screen
-and (min-device-width : 320px) and (max-device-width : 736px) {
-
+.title , .action_button {
+   text-align: center;
+   color: #FFFFFF;
 }
 
-/* TABLET (UP TILL IPAD AIR) */
-@media only screen and (min-device-width : 737px) and (max-device-width: 1024){
-
+.title {
+   font-family: 'Lobster',cursive;
 }
 
-/* LAPTOP AND ABOVE */
-@media only screen and (min-device-width : 1025){
-
+.action_button {
+   margin: auto;
+   background-color: #FF961F;
+   font-family: 'Roboto Condensed', sans-serif;
+   border-radius: 8px;
+   cursor: pointer; /* make cursor show point hand on hover */
 }
+
 
 body {
   background-color: #3366FF;
 }
 
 
-.action_button {
+/* SMARTPHONE (UP TILL IPHONE 6+)*/
+@media only screen
+and (min-device-width : 320px) and (max-device-width : 736px) {
 
-  margin: auto; /* center div horizontally */
-  text-align: center; /* center text horizontaly */
+   .title{
+      font-size: 20vw;
+      margin-top: 10vh;
+   }
 
-  background-color: #FF961F;
-  color: #FFFFFF;
-  width: 30vw; /* viewport widths */
-  font-size: 7vw;
-  font-family: Trebuchet MS;
-  border-radius: 4px;
-  cursor: pointer; /* make cursor show point hand on hover */
+   .action_button {
+     width: 25vw; /* viewport widths */
+     font-size: 6vw;
+     margin-top: 40vh;
+   }
 
-  margin-top: 65vh;
+}
+
+/* TABLET (UP TILL IPAD AIR) */
+@media only screen and (min-device-width : 737px) and (max-device-width: 1024px){
+
+}
+
+/* LAPTOP AND ABOVE */
+@media only screen and (min-device-width : 1025px) {
+
+   .title{
+      font-size: 8vw;
+   }
+
+
+   .action_button {
+     width: 17vw; /* viewport widths */
+     font-size: 4vw;
+     margin-top: 60vh;
+   }
+
 }
