@@ -1,96 +1,80 @@
-.title , .action-button {
-   text-align: center;
-   color: #FFFFFF;
+.title, .action-button {
+  text-align: center;
+  color: #FFFFFF;
 }
 
 .title {
-   font-family: 'Lobster',cursive;
+  font-family: 'Lobster', cursive;
 }
 
 .rule-row {
-   text-align: center;
+  text-align: center;
 }
 
 .alert-bar {
-   opacity: 0;
-   background-color: #ADEFAD;
-   color: #344834;
-   font-family: 'PT Serif', serif;
-   padding: 0.5em;
-   display: inline-block;
+  display: inline-block;
+  padding: 0.5em;
+  opacity: 0;
+  color: #344834;
+  background-color: #ADEFAD;
+  font-family: 'PT Serif', serif;
 }
 
-.input-box{
-   border: 0;
-   font-family: 'PT Serif', serif;
-   color: #FF961F;
-   outline: none;
-   vertical-align: text-bottom;
+.input-box {
+  vertical-align: text-bottom;
+  color: #FF961F;
+  border: 0;
+  outline: none;
+  font-family: 'PT Serif', serif;
 }
 
-.input-box:focus{
-   border: 2px solid #FF961F;
+.input-box:focus {
+  border: 2px solid #FF961F;
 }
 
-.grid-left{
-   display: inline-block;
+.grid-left {
+  display: inline-block;
 }
-
 
 body {
   background-color: #4D94FF;
 }
 
-
-/* SMARTPHONE (UP TILL IPHONE 6+)*/
-@media only screen
-and (min-device-width : 320px) and (max-device-width : 736px) {
-
-   .alert-bar{
-      font-size: 2.5em;
-   }
-
-   .title{
-      font-size: 20vw;
-   }
-
-   .grid-left {
-      display: block;
-   }
-
-   .input-box {
-      margin: auto;
-      margin-top: 1em;
-      height: 2em;
-      width: 10em;
-      font-size: 3em;
-   }
-
+@media only screen and (min-device-width: 320px) and (max-device-width: 736px) {
+  .alert-bar {
+    font-size: 2.5em;
+  }
+  .title {
+    font-size: 20vw;
+  }
+  .grid-left {
+    display: block;
+  }
+  .input-box {
+    width: 10em;
+    height: 2em;
+    margin: auto;
+    margin-top: 1em;
+    font-size: 3em;
+  }
 }
 
-/* TABLET AND ABOVE */
-@media only screen and (min-device-width : 737px) {
-
-   .alert-bar{
-      font-size: 1.3vw;
-   }
-
-   .input-box {
-      height: 4vw;
-   }
-
-   #question {
-      width: 35vw;
-      font-size: 1.5vw;
-   }
-
-   #answer {
-      font-size: 1.5vw;
-      width: 20vw;
-   }
-
-   .title{
-      font-size: 8vw;
-   }
-
+@media only screen and (min-device-width: 737px) {
+  .alert-bar {
+    font-size: 1.3vw;
+  }
+  .input-box {
+    height: 4vw;
+  }
+  #question {
+    width: 35vw;
+    font-size: 1.5vw;
+  }
+  #answer {
+    width: 20vw;
+    font-size: 1.5vw;
+  }
+  .title {
+    font-size: 8vw;
+  }
 }
