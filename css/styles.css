@@ -1,0 +1,72 @@
+body {
+  background-color: #4D94FF;
+}
+
+.title {
+  margin-top: 75px;
+  text-align: center;
+  color: #FFFFFF;
+  font-family: 'Lobster', cursive;
+  font-size: 5em;
+}
+
+.action-button, .input-box {
+  width: 200px;
+  height: 50px;
+  font-family: 'PT Serif', serif;
+  border: 0;
+}
+
+.action-button {
+  background-color: #FF961F;
+  font-size: 1em;
+  color: #FFFFFF;
+}
+
+.input-box {
+  color: #FF961F;
+  outline: none;
+}
+
+.input-box:focus {
+  border: 2px solid #FF961F;
+}
+
+.wrapper {
+  text-align: center;
+}
+
+#categories, #maxScore {
+  font-size: 1em;
+  display: inline-block;
+}
+
+@media only screen and (max-width: 720px), only screen and (max-device-width: 720px) {
+
+  .title {
+    margin-top: 25px;
+  }
+
+  #categories, #maxScore, #startButton {
+    display: block;
+    margin: 0 auto;
+    margin: 5px auto;
+  }
+
+}
+
+@media only screen and (max-device-width: 720px) {
+
+  .title {
+    font-size: 10em;
+    margin-top: 150px;
+  }
+
+  #categories, #maxScore, #startButton {
+    height: 100px;
+    width: 600px;
+    font-size: 3em;
+    padding: 20px;
+    margin: 30px auto;
+  }
+}
