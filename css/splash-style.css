@@ -1,30 +1,21 @@
-.title, .action-button {
-  text-align: center;
-  color: #FFFFFF;
+body {
+  background-color: #4D94FF;
 }
 
 .title {
-  font-family: 'Lobster', cursive;
-}
-
-.rule-row {
   text-align: center;
-}
-
-.alert-bar {
-  display: inline-block;
-  padding: 0.5em;
-  opacity: 0;
-  color: #344834;
-  background-color: #ADEFAD;
-  font-family: 'PT Serif', serif;
+  color: #FFFFFF;
+  font-family: 'Lobster', cursive;
+  font-size: 5em;
 }
 
 .input-box {
-  vertical-align: text-bottom;
+  height: 50px;
   color: #FF961F;
   border: 0;
   outline: none;
+  padding: 5px;
+  width: 200px;
   font-family: 'PT Serif', serif;
 }
 
@@ -32,49 +23,36 @@
   border: 2px solid #FF961F;
 }
 
-.grid-left {
+.wrapper {
+  text-align: center;
+}
+
+#categories, #maxScore {
+  font-size: 1em;
   display: inline-block;
 }
 
-body {
-  background-color: #4D94FF;
-}
+@media only screen and (max-device-width: 720px) {
 
-@media only screen and (min-device-width: 320px) and (max-device-width: 736px) {
-  .alert-bar {
-    font-size: 2.5em;
-  }
   .title {
-    font-size: 20vw;
+    font-size: 10em;
   }
-  .grid-left {
-    display: block;
-  }
-  .input-box {
-    width: 10em;
-    height: 2em;
-    margin: auto;
-    margin-top: 1em;
+
+  #categories, #maxScore {
+    height: 100px;
+    width: 600px;
     font-size: 3em;
+    padding: 20px;
   }
 }
 
-@media only screen and (min-device-width: 737px) {
-  .alert-bar {
-    font-size: 1.3vw;
+
+@media only screen and (max-width: 720px), only screen and (max-device-width: 720px) {
+
+  #categories, #maxScore {
+    display: block;
+    margin: 0 auto;
+    margin: 10px auto;
   }
-  .input-box {
-    height: 4vw;
-  }
-  #question {
-    width: 35vw;
-    font-size: 1.5vw;
-  }
-  #answer {
-    width: 20vw;
-    font-size: 1.5vw;
-  }
-  .title {
-    font-size: 8vw;
-  }
+
 }
