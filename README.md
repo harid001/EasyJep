@@ -1,5 +1,5 @@
-# EasyJep
+# Picture Jeopardy
 
 Easy and beautiful rendition of jeopardy.
 
-Testing my html/css/js skills!
+Responsive!
