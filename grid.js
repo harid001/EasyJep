@@ -3,6 +3,7 @@ addEventListener('load', function() {
   var MARGIN_LEFT_RIGHT = 0.5;
   var HEIGHT = 7;
 
+  // create the grid
   (function (categories, max_score) {
     var row = document.querySelector('.row');
     var num_margins = 2 * (categories-1) + 2;
@@ -22,8 +23,6 @@ addEventListener('load', function() {
         row.appendChild(block);
       }
     }
-
-
   })(sessionStorage.categories, sessionStorage.max_score);
 
 
