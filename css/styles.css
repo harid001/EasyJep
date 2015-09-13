@@ -44,9 +44,13 @@ html {
   display: inline-block;
 }
 
-.block {
+/*.block {
   background-color: #FF961F;
   float: left;
+}*/
+
+.block:hover{
+  background-color: #FF961F;
 }
 
 
