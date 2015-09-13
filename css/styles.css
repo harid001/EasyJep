@@ -4,6 +4,10 @@ body {
   margin: 0;
 }
 
+html {
+  overflow-y: hidden; /* removes scrollbar */
+}
+
 .title {
   margin-top: 75px;
   text-align: center;
