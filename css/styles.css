@@ -1,11 +1,11 @@
+html {
+  overflow-y: hidden; /* removes scrollbar */
+}
+
 body {
   background-color: #4D94FF;
   height: 100%;
   margin: 0;
-}
-
-html {
-  overflow-y: hidden; /* removes scrollbar */
 }
 
 .title {
@@ -14,6 +14,11 @@ html {
   color: #FFFFFF;
   font-family: 'Lobster', cursive;
   font-size: 5em;
+}
+
+.lobster {
+  font-family: 'Lobster', cursive;
+  color: #FFFFFF;
 }
 
 .action-button, .input-box {
@@ -44,15 +49,41 @@ html {
   display: inline-block;
 }
 
-/*.block {
+.block {
   background-color: #FF961F;
   float: left;
-}*/
-
-.block:hover{
-  background-color: #FF961F;
 }
 
+.navbar {
+  width: 100%;
+  padding: 10px;
+}
+
+.navbar td {
+  text-align: center;
+}
+
+.navbar td:first-child {
+  width: 20%;
+}
+
+.navbar td:last-child {
+  width: 10%;
+}
+
+.nav-element .nav-title {
+  vertical-align: middle
+}
+
+.nav-element {
+  font-size: 0.9em;
+  font-family: 'PT Serif', serif;
+  color: white;
+}
+
+.nav-title {
+  font-size: 1.5em;
+}
 
 @media only screen and (max-width: 720px), only screen and (max-device-width: 720px) {
 
