@@ -1,4 +1,8 @@
 window.onload = function() {
+    var password = prompt("Enter game password");
+    while(password != config["password"]) {
+        password = prompt("Enter game password");
+    }
     var sheet = document.styleSheets[0];
     var columns = config["numCategories"];
     var rows = config["numQuestionsPerCategory"];

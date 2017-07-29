@@ -3,6 +3,7 @@ var config = {
     "numQuestionsPerCategory": 5,
     "numTeams": 4,
     "saveLocation": "~/Desktop/",
+    "password": "lebronjames",
     "currentTeam": "test1",
     "teams": [
         {
