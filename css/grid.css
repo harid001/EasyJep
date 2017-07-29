@@ -1,0 +1,85 @@
+.wrapper {
+    display: grid;
+    grid-gap: 10px;
+    grid-auto-rows: minmax(100px, auto);
+}
+
+.block {
+    background-color: #002080;
+}
+
+body {
+    background-color: black;
+}
+
+ @font-face { font-family: Swiss911; src: url('../Swiss911.otf'); } 
+
+ .question-wrapper {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+    grid-auto-rows: minmax(150px, auto);
+
+ }
+
+ .question {
+     grid-row: 1 / 4;
+     grid-column: 1 / 5;
+     width: 90vw;
+     margin: 0 auto;
+     text-align: center;
+ }
+
+ .answer {
+     grid-row: 4;
+     grid-column: 1 / 5;
+     width: 90vw;
+     margin: 0 auto;
+     display: grid;
+     grid-template-columns: repeat(4, 1fr);
+     grid-gap: 10px;
+     text-align: center;
+ }
+
+ .reveal-answer {
+     grid-row: 5;
+     grid-column: 1 / 5;
+     text-align: center;
+     width: 90vw;
+     margin: 0 auto;
+ }
+
+.center {
+    transform: translateY(-50%);
+ }
+
+.wrap {
+    position: relative;
+    top: 50%;
+}
+
+button {
+    width: 200px;
+    height: 50px;
+    background-color: #3333ff;
+    color: gold;
+    font-family: "Swiss911";
+    font-size: 1.5em;
+    border: none;
+}
+
+button:hover {
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+.scores {
+    width: 100px;
+    font-size: 1em;
+    margin: 10px;
+    background-color: #002080;
+}
+
+.disabled {
+    pointer-events: none;
+    opacity: 0.2;
+}
